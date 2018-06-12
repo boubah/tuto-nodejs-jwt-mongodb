@@ -1,12 +1,24 @@
-## Nodejs in 10 minutes
+## Authentification d'une application RESTFull NodeJS avec JWT
 
-clone the project
+### Prérequis
+Cette petite application utilise mongodb donc nécessite que celui-ci soit 
+installer et démarrer.
 
-### Installations
-* npm install
+### Télécharger les sources 
 
-### Run
+cloner le projet si vous êtes utilisateurs de git sinon télécharger l'archive
 
-* npm run start
+### Installer les dépendances Node en tapant la commande
+* `npm install` ou `npm i`
 
-:)
+### lancez le serveur via tâche start du fichier package.json
+
+* `npm run start`
+
+### Rendez-vous dans Postman pour les tests
+URL de tests des APIs
+
+* `GET http://localhost:3000/tasks` 
+* `POST http://localhost:3000/tasks`
+* `POST http://localhost:3000/auth/register`
+* `POST http://localhost:3000/auth/sign_in` 
