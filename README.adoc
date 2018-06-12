@@ -9,7 +9,6 @@ Cette petite application utilise **mongodb** donc nécessite que celui-ci soit
 cloner le projet si vous êtes utilisateurs de git sinon télécharger l'archive et decompresser le
 
 ### Structure du projet après téléchargement
-tuto-nodejs-jwt-mongodb
 ```
 tuto-nodejs-jwt-mongodb
 |___api
