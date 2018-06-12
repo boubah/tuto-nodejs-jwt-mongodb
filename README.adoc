@@ -1,17 +1,36 @@
 ## Authentification d'une application RESTFull NodeJS avec JWT
 
 ### Prérequis
-Cette petite application utilise mongodb donc nécessite que celui-ci soit 
-installer et démarrer.
+Cette petite application utilise **mongodb** donc nécessite que celui-ci soit 
+**installer** et **démarrer**.
 
 ### Télécharger les sources 
 
-cloner le projet si vous êtes utilisateurs de git sinon télécharger l'archive
+cloner le projet si vous êtes utilisateurs de git sinon télécharger l'archive et decompresser le
 
+### Structure du projet après téléchargement
+tuto-nodejs-jwt-mongodb
+```
+tuto-nodejs-jwt-mongodb
+|___api
+|-- |___controllers
+|-------|___todoListController.js
+|-------|___userController.js
+|---|__models
+|------|___todoListModel.js
+|------|___userModel.js
+|---|__routes
+|------|___todoListRoutes.js
+|---|__utils
+|------|___index.js
+|___package.json
+|___server.js
+|___README.adoc
+```
 ### Installer les dépendances Node en tapant la commande
 * `npm install` ou `npm i`
 
-### lancez le serveur via tâche start du fichier package.json
+### lancez le serveur nodemon via la tâche start du fichier package.json
 
 * `npm run start`
 
