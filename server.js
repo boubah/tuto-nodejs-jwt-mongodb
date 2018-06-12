@@ -3,14 +3,21 @@
 const express = require('express'),
   app = express(),
   port = process.env.PORT || 3000,
-  mongoose = require('mongoose'),
+  Promise = require('bluebird'),
+  mongoose = Promise.promisifyAll(require('mongoose')),
   Task = require('./api/models/todoListModel'),
   User = require('./api/models/userModel'),
   bodyParser = require('body-parser');
   
-mongoose.Promise = global.Promise;
+  
+mongoose.Promise = Promise;
 mongoose.connect('mongodb://localhost/Tododb', {
   useMongoClient: true
+}).then(() => {
+  console.log('Connecté à la base mongodb');
+}).catch(err => {
+  console.log('Error lors du demarrage: ', err.stack);
+  process.exit(1);
 });
 
 

@@ -13,10 +13,3 @@ exports.json_web_token_handler = (req, res, next) => {
       next();
     }
 };
-
-const errorPredicate = err => (err);
-exports.error_handlers = (err, res) => {
-      if (errorPredicate(err)) {
-          res.send(err);
-        }
-};
